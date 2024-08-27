@@ -1,0 +1,53 @@
+body{
+    background: url(../img/register.jpg);
+    height: 1000px;
+
+}
+.regform{
+    margin: 130px 0px;
+    width: 320px;
+    height: 230px;
+    background-color:rgb(244, 244, 244);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px 20px;
+}
+.regbt{
+    border: none;
+    background-color:rgb(244, 244, 244);
+    text-decoration: underline;
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    font-size: larger;
+    padding: 5px 20px;
+    transition-duration: 0.5s;
+}
+.regbt:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+}
+.regform input{
+    border: none;
+    width: 300px;
+    height: 20px;
+}
+.regform input:focus{
+    background-color: rgb(199, 199, 199);
+    color: white;
+    transition-duration: 0.5s;
+
+}
+.regform p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+}
+.regform h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin: 10px;
+}
+.regform>em{
+    position: relative;
+    left: 200px;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/headerfooter.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../img/logo.png">
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <div class="header" align="left">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="logoweb" width="160px" height="100px"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li style="background: url(../img/v.png.crdownload) no-repeat 100px 50px; background-size: 12%;">
+                    <a href="">
+                        <h3>Brands</h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                Nike
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Converse
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Palladium
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Vans
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Kangol
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Sneaker lab
+                                </a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="">
+                        <h3>New Arrival</h3>
+                        
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <h3>Special price</h3>
+                        
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <h3>Store</h3>
+                        
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../html/news.html">
+                        <h3>News</h3>
+                        
+                    </a>
+                </li>
+
+
+               
+                
+                
+            </ul>
+        </div>
+        <button class="giohang"><br><img src="../img/giohang.png" alt="giohang" width="30px" height="30px"></button>
+        <div class="login">
+            <ul>
+                <li><a href="../html/register.html">Đăng kí</a></li>
+                <li><a href="../html/login.html">Đăng nhập</a></li>
+            </ul>
+        </div>
+        
+
+    </div>
+    </div>
+
+
+
+    <script>
+        function kiem()
+        {
+            var u1 = document.getElementById("u");
+            var p1 = document.getElementById("p");
+            var loi = "";
+            if(u1.value.length==0)
+            {
+                loi += "Chưa nhập username!";
+            }
+            if(p1.value.length==0)
+            {
+                loi += "\nChưa nhập password!";
+            }
+
+            if(loi.length==0){
+                alert("Đăng nhập thành công! Chào mừng " + u1.value + "!");
+            }else{
+                alert(loi);
+            }
+        }
+    </script>
+
+
+
+
+
+    <div align="center">
+        <form action="" class="regform" align="left" id="f">
+            <h2>ĐĂNG NHẬP</h2>
+                <p>
+                    Tên đăng nhập:
+                    <br>
+                    <input type="text" id="u">
+                </p>
+                <p>
+                    Mật khẩu:
+                    <br>
+                    <input type="text" id="p">
+                </p>
+                <em><a href="">Quên mật khẩu?</a></em>
+            <br>
+            <button class="regbt" type="button" onclick="kiem()">ĐĂNG NHẬP</button>
+        </form>
+    </div>
+</body>
+<footer>
+    <hr style="display: flexbox;">
+    <div style="height: 270px;">
+        <div class="box1">
+            <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+            <a href=""><p>Trung tâm trợ giúp</p></a>
+            <a href=""><p>Hướng dẫn mua hàng</p></a>
+            <a href="">Thanh toán<p></p></a>
+            <a href="">Chăm sóc khách hàng<p></p></a>
+            <a href="">Chính sách bảo hành<p></p></a>
+        </div>
+        
+        <div class="box2">
+            <h3>VỀ MANGO STORE</h3>
+            <a href=""><p>Giới thiệu về Mango Store</p></a>
+            <a href=""><p>Tuyển dụng</p></a>
+            <a href="">Chính sách bảo mật<p></p></a>
+            <a href="">Chính hãng<p></p></a>
+        </div>
+
+
+        <div class="box3">
+            <h3>THANH TOÁN</h3>
+            <a href="" style="background-color: white; padding: 5px; padding-top: 8px; border-radius: 3px; border-style: solid;"><img src="../img/ship1.png" alt=""></a>
+            <a href=""style="background-color: white; padding: 5px; padding-top: 8px; border-radius: 3px; border-style: solid;"><img src="../img/ship2.png" alt=""></a>
+            <a href="" style="background-color: white; padding: 5px; padding-top: 8px; border-radius: 3px; border-style: solid;"><img src="../img/ship4.png" alt=""></a>
+            <br> <br>
+            <a href="" style="background-color: white; padding: 5px; padding-top: 8px; border-radius: 3px; border-style: solid;"><img src="../img/ship5.png" alt=""></a>
+            <a href="" style="background-color: white; padding: 5px; padding-top: 8px; border-radius: 3px; border-style: solid;"><img src="../img/ship6.png" alt=""></a>
+            <a href="" style="background-color: white; padding: 5px; padding-top: 8px; border-radius: 3px; border-style: solid;"><img src="../img/ship7.png" alt=""></a>
+
+        </div>
+
+
+        <div class="box4">
+            <h3>THEO DÕI CHÚNG TÔI</h3>
+            <a href=""><img src="../img/fb.png" alt="" width="20px" height="20px"><em> Facebook</em></a><br><br>
+            <a href=""><img src="../img/ins.png" alt="" width="20px" height="20px"><em> Instagram</em></a><br><br>
+            <a href=""><img src="../img/yt.png" alt="" width="20px" height="20px"><em> LinkedIn</em></a><br><br>
+        </div>
+
+        
+    </div>
+    <hr>
+    <div class="foot2">
+        © 2023 Mango Store. Tất cả các quyền được bảo lưu.
+    </div>
+    <hr>
+    <div class="foot3" align="center">
+        <img src="../img/dk1.png" alt="" width="250px" height="80px">
+        <img src="../img/dk2.png" alt="" width="270px" height="100px">
+        <br>
+        <br>
+        CÔNG TY TNHHMTV MANGO STORE
+        <br>
+        <em style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: small;">
+            Địa chỉ: 89 Lê Trọng Tấn, P. Sơn Kỳ, Q. Tân Phú, Tp. Hồ Chí Minh, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.mango.vn
+            <br>
+            Chịu Trách Nhiệm Quản Lý Nội Dung: Huỳnh Quốc Bảo - Điện thoại liên hệ: 0793497489
+            <br>
+            © 2015 - Bản quyền thuộc về Công ty TNHH Mango Store
+        </em>
+    </div>
+</footer>
+<script src="https://uhchat.net/code.php?f=e48fc2"></script>
+</html>

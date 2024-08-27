@@ -1,0 +1,455 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+}
+.header{
+    background-color: white;
+    height: 105px;
+    width: 100%;
+    position:fixed;
+    top: 0px;
+    z-index: 1;
+}
+.logo{
+    width: 160px;
+    float: left;
+    clear: right;
+    padding: 0px;
+    margin: 0px;
+}
+.menu{
+    padding-left: 20px;
+    width: 70%;
+    height: 100px;
+    float: left;
+    background-color: white;
+}
+.menu>ul>li{
+    display: inline-block;
+    position: relative;
+    width: 150px;
+}
+.menu>ul>li>a{
+    display: block;
+    padding: 0 20px;
+    text-decoration:none;
+    font-variant:small-caps;
+    font-size:larger;
+    color:black;
+
+}
+.menu>ul{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    list-style: none;
+    text-align:left;
+    background-color: white;
+}
+.menu>ul h3{
+    margin-top: 40px;
+    font-size: 18px;
+}
+.menu ul ul{
+    display: none;
+    position: absolute;
+    margin: 0px;
+    width: 150px;
+    list-style: none;
+    text-align:left;
+    height: 30px;
+    z-index: 2;
+    transition-duration: 1s;
+}
+.menu ul ul a{
+    position: relative;
+    left: -40px;
+    display: block;
+    width: 150px;
+    padding-left: 15px;
+    margin: 0px;
+    background-color: white;
+    line-height: 40px;
+    font-variant: small-caps;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: larger;
+    transition-duration: 1s;
+}
+.menu ul li:hover ul{
+    display: inline-block;
+}
+.menu ul ul li:hover a{
+    background-color: black;
+    transition-duration: 0.2s;
+}
+.giohang{
+    position: absolute;
+    right: 60px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: white;
+    margin-left: 110px; 
+}
+.login{
+    background: url(../img/login.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top:39px;
+    right: 20px;
+    width: 35px;
+    height: 60px;
+    border-radius: 30px;
+    color: red;
+    float: right;
+}
+.login li{
+    display: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    font-variant: small-caps;
+}
+.login li a{
+    color: white;
+}
+.login li a:hover{
+    color: red;
+}
+.login ul{
+    position: absolute;
+    top: 30px;
+    left: -120px;
+}
+.login:hover li{
+    display:inline-block;
+    padding: 10px 10px 0px 10px;
+    background-color: black;
+    color: red;
+    height: 30px;
+    width: 100px;
+    z-index: 2;
+}
+.bannerlilnasx{
+    height: 300px;
+    background-color: rgb(255, 55, 0);
+    margin-top: 100px;
+}
+.bannerlilnasx:hover{
+    filter:brightness(1.2);
+}
+.nasx1{
+    background-image: url(../img/nasx1.jpg);
+    background-size: cover;
+    width: 30%;
+    height: 100%;
+    float: left;
+    clear: left;
+    
+}
+.nasx2{
+    text-align: center;
+    background-color: black;
+    width: 40%;
+    height: 100%;
+    float: left;
+    clear: right;
+}
+.nasx2>h1{
+    color:rgb(135, 3, 3);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #fe0000;
+    margin: 2px;
+    
+}
+.nasx3{
+    background-image: url(../img/nasx3.jpg);
+    background-size: contain;
+    width: 30%;
+    height: 100%;
+    float: left;
+    clear: right;
+
+}
+.bannertet{
+    background-image: url(../img/tintuc2.jpg);
+    width: 100%;
+    height: 450px;
+    padding-top: 0.8cm;
+    transition-duration: 0.4s;
+    background-size: cover;
+    background-position: top;
+
+}
+.bannertet:hover{
+    filter: brightness(1.2);
+    transition-duration: 0.4s;
+}
+.bannertetbt{
+    margin-top: 10.7cm;
+    height: 1cm;
+    padding: 10px;
+    border-radius: 19px;
+    display: block;
+    border-style: none;
+    background-color: #980000;
+    color: yellow;
+}
+.bannertetbt:hover{
+    background-color: black;
+}
+.airmax{
+    margin-top: 1cm;
+    height: 400px;
+    padding: 20px;
+}
+.airmax>h1{
+    padding-left: 0.5cm;
+    color:black;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin: 2px;
+}
+.airmaxbox{
+    width: 18%;
+    padding: 10px;
+    margin: 0.3cm;
+    height: 100px;
+    float: left;
+    clear: right;
+    transition-duration: 0.3s;
+}
+.airmaxbox>h4{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 2px rgb(83, 83, 83);
+}
+.airmaxbox1>h3{
+    margin-top: -50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 4px 4px 2px rgb(83, 83, 83);
+    font-size: 40px;
+    color: black;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(166, 0, 0);
+}
+.airmaxbox:hover{
+    filter: brightness(1.3);
+}
+.airmaxbox1:hover{
+    filter: brightness(1.3);
+}   
+.airmaxbox1{
+    width: 300px;
+    height: 300px;
+    border-style: ridge;
+    border-color: brown;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0.3cm;
+    float: left;
+    clear: right;
+    text-align: center;
+    transition-duration: 0.3s;
+
+}
+.sales{
+    margin: 15px;
+    height: 800px;
+    padding: 20px;  
+    padding-top: 30px;
+    padding-left: 40px;
+    margin-bottom: -1.5cm;
+}
+.sales>h1{
+    padding-left: 0.5cm;
+    color:black;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin: 2px;
+}
+.sales>.box{
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 18px;
+    background-color: #e9e9e9;
+    float: left;
+}
+.box>em{
+    font-size: smaller;
+    text-decoration: line-through;
+}
+.box:hover{
+    background-color: black;
+    transition-duration: 0.5s;
+    color: white;
+}
+
+footer{
+    background-color: rgb(227, 227, 227);
+    height: 600px;
+    padding: 0px;
+}
+.box1{
+    padding: 10px;
+    padding-left: 30px;
+    width: 23%;
+    height: 200px;
+    margin: 0px;
+    float: left;
+    clear: right;
+}
+.box2{
+    padding: 10px;
+    width: 23%;
+    height: 200px;
+    margin: 0px;
+    float: left;
+    clear: right;
+}
+.box3{
+    padding: 10px;
+    width: 23%;
+    height: 200px;
+    margin: 0px;
+    float: left;
+    clear: right;
+}
+.box4{
+    padding: 10px;
+    width: 23%;
+    height: 200px;
+    margin: 0px;
+    float: left;
+    clear: right;
+}
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+a:hover{
+    color:rgb(255, 0, 0);   
+}
+.foot2{
+    height: 50px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.atcxbanner{
+    background-image: url(../img/atcxbanner.jpg);
+    height: 630px;
+    margin-bottom: 3cm;
+}
+.atcxtxt{
+    background-color: rgb(131, 131, 131);
+    padding-right: 1cm;
+    height: 100%;
+    opacity: 0.0;
+    text-overflow: clip;
+    
+}
+.atcxtxt:hover{
+    opacity: 0.7;
+    transition-duration: 1s;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/headerfooter.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="icon" href="../img/logo.png">
+    <title>Đăng kí</title>
+</head>
+<body>
+    <div class="header" align="left">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="logoweb" width="160px" height="100px"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li style="background: url(../img/v.png.crdownload) no-repeat 100px 50px; background-size: 12%;">
+                    <a href="">
+                        <h3>Brands</h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                Nike
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Converse
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Palladium
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Vans
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Kangol
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Sneaker lab
+                                </a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="">
+                        <h3>New Arrival</h3>
+                        
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <h3>Special price</h3>
+                        
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <h3>Store</h3>
+                        
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../html/news.html">
+                        <h3>News</h3>
+                        
+                    </a>
+                </li>
+
+
+               
+                
+                
+            </ul>
+        </div>
+        <button class="giohang"><br><img src="../img/giohang.png" alt="giohang" width="30px" height="30px"></button>
+        <div class="login">
+            <ul>
+                <li><a href="../html/register.html">Đăng kí</a></li>
+                <li><a href="../html/login.html">Đăng nhập</a></li>
+            </ul>
+        </div>
+        
+
+    </div>
+
+    </div>
+
+
+
+    <script>
+        function isValidEmail(email) {
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailPattern.test(email);
+        }
+
+        function kiem()
+        {
+            var loi = false;
+            var u = document.getElementById("u").value;
+            var e = document.getElementById("e").value;
+            var p1 = document.getElementById("p1").value;
+            var p2 = document.getElementById("p2").value;
+            var sdt = document.getElementById("sdt").value;
+            var cb = document.getElementById("cb1");
+
+            if(u.length==0)
+            {
+                document.getElementById("e-u").innerText="Username trống";
+                loi = true;
+            }else{
+                document.getElementById("e-u").innerText="";
+            }
+            if(e.length==0)
+            {
+                document.getElementById("e-e").innerText="Email trống";
+                loi = true;
+            }else{
+                document.getElementById("e-e").innerText="";
+            }
+            if(p1.length==0)
+            {
+                document.getElementById("e-p1").innerText="Password trống";
+                loi = true;
+            }else{
+                document.getElementById("e-p1").innerText="";
+            }
+            if(p2.length==0)
+            {
+                document.getElementById("e-p2").innerText="Chưa nhập lại password";
+                loi = true;
+            }else{
+                document.getElementById("e-p2").innerText="";
+            }
+            if(sdt.length==0 || isNaN(sdt))
+            {
+                document.getElementById("e-sdt").innerText="Số điện thoại trống hoặc sai định dạng";
+                loi = true;
+            }else{
+                document.getElementById("e-sdt").innerText="";
+            }
+
+
+            if(!isValidEmail(e))
+            {
+                document.getElementById("e-e").innerText="Email sai định dạng!";
+                loi = true;
+            }else{
+                document.getElementById("e-e").innerText="";
+            }
+            if(p1 != p2){
+                document.getElementById("e-p2").innerText="Nhập lại không đúng!"
+                loi = true;
+            }else{
+                document.getElementById("e-p2").innerText=""
+            }
+            if(cb.checked != true){
+                alert("Hãy đồng ý với điều khoản dịch vụ");
+                loi = true;
+            }
+
+
+
+            if(loi) return;
+            
+            var gt = document.getElementById("gt").value;
+
+            alert("Đăng kí thành công! \n" + u + "\n" + p1  + "\n" + e + "\n" + sdt + "\n" + gt);
+
+            
+            
+
+
+
+        }
+    </script>
+
+
+
+    <div align="center">
+        <form action="" class="regform" align="left">
+            <h2>ĐĂNG KÝ</h2>
+                <p>
+                    Tên đăng nhập:
+                    <br>
+                    <input type="text" id="u">
+                    <br>
+                    <span id="e-u" style="color: red;"></span>
+                </p>
+                <p>
+                    Email:
+                    <br>
+                    <input type="text" id="e">
+                    <span id="e-e" style="color: red;"></span>
+                </p>
+                
+                <p>
+                    Mật khẩu:
+                    <br>
+                    <input type="password" id="p1">
+                    <span id="e-p1" style="color: red;"></span>
+                </p>
+                <p>
+                    Nhập lại mật khẩu:
+                    <br>
+                    <input type="password" id="p2">
+                    <span id="e-p2" style="color: red;"></span>
+                </p>
+
+                <p>
+                    Số điện thoại: 
+                    <input type="text" id="sdt"> <br>
+                    <span id="e-sdt" style="color: red;"></span>
+                </p>
+
+                <p>
+                    Giới tính:
+                    
+                    <input type="radio" id="gt" name="gt1" style="width: auto; margin-bottom: 0px;" value="Nam" checked>Nam
+                    <input type="radio" id="gt" name="gt1" style="width: auto; margin-bottom: 0px;" value="Nữ">Nữ
+                    <span id="e-gt"></span>
+                </p>
+
+                
+                
+                <p>
+                    <input type="checkbox" id="cb1" style="width: auto; margin-bottom: 0px;">Tôi đã đọc và đồng ý với mọi điều khoản sử dụng
+                    <br>
+                    <input type="checkbox"  style="width: auto; margin-bottom: 0px;">Nhận thông báo từ Mango Store.
+                    <span id="e-cb"></span>
+                </p>
+                
+                    
+            <br>
+            <button class="regbt" type="button" onclick="kiem()">ĐĂNG KÝ</button>
+        </form>
+    </div>
+</body>
+<footer>
+    <hr style="display: flexbox;">
+    <div style="height: 270px;">
+        <div class="box1">
+            <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+            <a href=""><p>Trung tâm trợ giúp</p></a>
+            <a href=""><p>Hướng dẫn mua hàng</p></a>
+            <a href="">Thanh toán<p></p></a>
+            <a href="">Chăm sóc khách hàng<p></p></a>
+            <a href="">Chính sách bảo hành<p></p></a>
+        </div>
+        
+        <div class="box2">
+            <h3>VỀ MANGO STORE</h3>
+            <a href=""><p>Giới thiệu về Mango Store</p></a>
+            <a href=""><p>Tuyển dụng</p></a>
+            <a href="">Chính sách bảo mật<p></p></a>
+            <a href="">Chính hãng<p></p></a>
+        </div>
+
+
+        <div class="box3">
+            <h3>THANH TOÁN</h3>
+            <a href="" style="background-color: white; padding: 5px; padding-top: 8px; border-radius: 3px; border-style: solid;"><img src="../img/ship1.png" alt=""></a>
+            <a href=""style="background-color: white; padding: 5px; padding-top: 8px; border-radius: 3px; border-style: solid;"><img src="../img/ship2.png" alt=""></a>
+            <a href="" style="background-color: white; padding: 5px; padding-top: 8px; border-radius: 3px; border-style: solid;"><img src="../img/ship4.png" alt=""></a>
+            <br> <br>
+            <a href="" style="background-color: white; padding: 5px; padding-top: 8px; border-radius: 3px; border-style: solid;"><img src="../img/ship5.png" alt=""></a>
+            <a href="" style="background-color: white; padding: 5px; padding-top: 8px; border-radius: 3px; border-style: solid;"><img src="../img/ship6.png" alt=""></a>
+            <a href="" style="background-color: white; padding: 5px; padding-top: 8px; border-radius: 3px; border-style: solid;"><img src="../img/ship7.png" alt=""></a>
+
+        </div>
+
+
+        <div class="box4">
+            <h3>THEO DÕI CHÚNG TÔI</h3>
+            <a href=""><img src="../img/fb.png" alt="" width="20px" height="20px"><em> Facebook</em></a><br><br>
+            <a href=""><img src="../img/ins.png" alt="" width="20px" height="20px"><em> Instagram</em></a><br><br>
+            <a href=""><img src="../img/yt.png" alt="" width="20px" height="20px"><em> LinkedIn</em></a><br><br>
+        </div>
+
+        
+    </div>
+    <hr>
+    <div class="foot2">
+        © 2023 Mango Store. Tất cả các quyền được bảo lưu.
+    </div>
+    <hr>
+    <div class="foot3" align="center">
+        <img src="../img/dk1.png" alt="" width="250px" height="80px">
+        <img src="../img/dk2.png" alt="" width="270px" height="100px">
+        <br>
+        <br>
+        CÔNG TY TNHHMTV MANGO STORE
+        <br>
+        <em style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: small;">
+            Địa chỉ: 89 Lê Trọng Tấn, P. Sơn Kỳ, Q. Tân Phú, Tp. Hồ Chí Minh, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.mango.vn
+            <br>
+            Chịu Trách Nhiệm Quản Lý Nội Dung: Huỳnh Quốc Bảo - Điện thoại liên hệ: 0793497489
+            <br>
+            © 2015 - Bản quyền thuộc về Công ty TNHH Mango Store
+        </em>
+    </div>
+</footer>
+<script src="https://uhchat.net/code.php?f=e48fc2"></script>
+</html>

@@ -1,0 +1,26 @@
+body{
+    background: url(../img/register.jpg);
+}
+.bodynews{
+    width: 90%;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    padding-bottom: 100px;
+}
+.bodynews h1{
+    font-size: 50px;
+    text-align: left;
+}
+.subtitle{
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+.titmini{
+    text-align: left;
+    font-weight: bold;
+}
+.baiviet{
+    text-align: justify;
+}
